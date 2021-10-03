@@ -1,58 +1,42 @@
-# http-ssl-ssh-tunneling
-http ssl ssh tunneling vpn for android and linux devices
 
-# whats new!
+# Http Injector Python
 
-* Now support combination ssl + payload 
-
-# packages :
-
-[+] - apt install -y git openssh sshpass netcat-openbsd corkscrew screen python3
+Bypass ISP firewalls Browse the internet through ssh tunnel
 
 
-# configuration :
 
-past your data into file settings.ini 
+## How it works
 
-![image](https://user-images.githubusercontent.com/46646744/122469251-9f621400-cfb4-11eb-9d64-f5dbfa2dffa9.png)
+This script tricks your isp into thinking you are using a special data pack (ex: teams.microsoft.com)
+and allows you to browse any website using that pack
+  
+## Special thanks to
 
-* note : if not woks in defaul auto_replace value , update it to auto_replace = 1 in file settings.ini
+This project is a modified version of the following project. make sure to check their project.
+ - [abdoxfox/http-ssl-ssh-injector](https://github.com/abdoxfox/http-ssl-ssh-injector)
+ 
+  
+## Disclaimer
+I'm not responsible for anything you do with this
 
-![image](https://user-images.githubusercontent.com/46646744/121788947-9bf01680-cbc9-11eb-8b84-4682f58d1387.png)
+  
+## How to use
 
+First install these dependancies
 
-# how it works!
+```bash
+  sudo apt install sshpass 
+  sudo apt install netcat-openbsd
+  sudo apt install corkscrew
+  sudo apt install python3
+```
 
-(root is required in android )
+Modify the settings.ini file according to your needs
 
-[+] - git clone https://github.com/abdoxfox/http-ssl-ssh-injector.git
+Then run http.sh in terminal 
 
-# steps :
+Install [Proxy Switcher](https://add0n.com/proxy-switcher.html) extension on you Browser and choose the following settings
 
-* setup your custom payload and proxy (proxy not required)
+![Screenshot](./Screenshot.png)
 
-[+] - cd http-ssl-ssh-injector
-
-[+] - sudo  or tsu for termux  #run as root
-
-[+] - chmod +x runvpn.sh
-
-[+] - ./runvpn.sh
-
-* choose your connection mode:
-
-![image](https://user-images.githubusercontent.com/46646744/122469828-48a90a00-cfb5-11eb-8b2b-48e9870618b2.png)
-
-
-# screenshots 
-
-![image](https://user-images.githubusercontent.com/46646744/121225010-00853b80-c881-11eb-8cb6-4fcea95f8f88.png)
-
-* note : to stop the script press CTRL + C
-
-![image](https://user-images.githubusercontent.com/46646744/121225175-2c082600-c881-11eb-9c82-27fc2f4200a1.png)
-
-
-screenshots from : @megasniff_v2 (thanks a lot bro)
-
-
+  
