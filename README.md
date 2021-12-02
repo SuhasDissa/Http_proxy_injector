@@ -50,7 +50,9 @@ Run the **HTTP Config Editor** and edit the settings.
 ### How to use
 
 Run **http_injector** in terminal
-<span style="color: red;">Warning: Do not run http_Injector by double clicking it!</span>
+
+<p style="color:red;">Warning: Do not run http_Injector by double clicking it!</p>
+
 ```bash
 cd /path/to/http/injector/folder/
 chmod +x ./http_Injector
