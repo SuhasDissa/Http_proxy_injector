@@ -34,7 +34,7 @@ class sshRunn:
 				print("inject starting")
 				nc_proxies_mode = [f'corkscrew {inject_host} {inject_port} %h %p', f'nc -X CONNECT -x {inject_host}:{inject_port} %h %p']
 				#arg = str(sys.argv[1])
-				arg = '1'
+				arg = connect_mode
 				if arg == '1':
 					nc_proxy = nc_proxies_mode[0]
 				else:
@@ -333,6 +333,7 @@ if __name__=='__main__':
 	port = config['ssh']['port']
 	user = config['ssh']['username']
 	password = config['ssh']['password']
+	connect_mode = config['ssl_mode']['ssh_mode']
 	print(host)
 	print(port)
 	print(user)
