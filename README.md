@@ -57,7 +57,7 @@ Run the **SettingsEditor** and edit the settings.
 
 Run **InjectorSSH** or **InjectorSSL** in terminal
 
-<p style="color:red;">Warning: Do not run http_Injector by double clicking it!</p>
+🛑🛑 Warning: Do not run http_Injector by double clicking it! 🛑🛑
 
 ```bash
 cd /path/to/http/injector/folder/
