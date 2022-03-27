@@ -30,7 +30,13 @@ There are two ways to run this
 
 ### Installing Dependancies
 
-First install these dependancies
+First Download the correct executables according to your needs
+
+[![Download For SSH](https://img.shields.io/badge/Download_For_SSH-238636?style=for-the-badge&logoColor=white)](https://github.com/SuhasDissa/Http_proxy_injector/releases/download/V1/SSH_Executables.zip)
+
+[![Download For SSL](https://img.shields.io/badge/Download_For_SSL-238636?style=for-the-badge&logoColor=white)](https://github.com/SuhasDissa/Http_proxy_injector/releases/download/V1/SSL_Executables.zip)
+
+Then install these dependancies
 
 ```bash
   sshpass
@@ -45,50 +51,20 @@ Modify the settings.ini file according to your needs
 
 ### How to configure settings.ini file
 
-Run the **HTTP Config Editor** and edit the settings.
+Run the **SettingsEditor** and edit the settings.
 
 ### How to use
 
-Run **http_injector** in terminal
+Run **InjectorSSH** or **InjectorSSL** in terminal
 
 <p style="color:red;">Warning: Do not run http_Injector by double clicking it!</p>
 
 ```bash
 cd /path/to/http/injector/folder/
-chmod +x ./http_Injector
-./htto_Injector
+chmod +x ./InjectorSSH
+./InjectorSSH
 ```
 
 Install [Proxy Switcher](https://add0n.com/proxy-switcher.html) extension on you Browser and choose the following settings
 
 ![Screenshot](./Screenshot.png)
-
-
-## Running from Source Code
-
-Use this method if the above method doesent work
-
-### Installing Dependancies
-
-First install these dependancies
-
-```bash
-  sshpass
-  netcat-openbsd
-  corkscrew
-  nc
-  python3
-```
-
-open terminal and run **http_Injector.py** python file
-```bash
-python3 http_Injector.py
-```
-### How to switch between SSH and SSL mode
-
-open the `ssh.py` file and goto **line 34**
-then change the variable according to following
-
-- SSH mode: `arg = '1'`
-- SSL mode: `arg = '2'`
-
