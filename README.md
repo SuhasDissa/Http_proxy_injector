@@ -42,7 +42,6 @@ Then install these dependancies
   sshpass
   netcat-openbsd
   corkscrew
-  nc
 ```
 
 Use `sudo apt install <package>` for Debian based distros and use `sudo pacman -S <package>` for Arch based distros
